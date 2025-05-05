@@ -1,0 +1,14 @@
+package views
+
+templ errContent(errCode int, errMsg string) {
+	<article>
+		<div>{ errCode }</div>
+		<div>{ errMsg }</div>
+	</article>
+}
+
+templ Error(errCode int, errMsg string) {
+	@Layout(
+		errContent(errCode, errMsg),
+	)
+}

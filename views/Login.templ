@@ -1,0 +1,17 @@
+package views
+
+templ loginForm() {
+	<div>
+		<h1>Login Page</h1>
+		<form>
+			<label for="name">Name</label>
+			<input id="name" type="text"/>
+		</form>
+	</div>
+}
+
+templ Login() {
+	@Layout(
+		signupForm(),
+	)
+}

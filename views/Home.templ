@@ -1,0 +1,17 @@
+package views
+
+import ui "github.com/Mar1O9/reddlone/views/ui"
+
+templ homeContent() {
+	<main class="main">
+		<h1>Hello from Home</h1>
+	</main>
+}
+
+templ Home(content any) {
+	@Layout(
+		ui.Header("Hello From Header"),
+		homeContent(),
+		ui.SideBar("Hello from Sidebar"),
+	)
+}
