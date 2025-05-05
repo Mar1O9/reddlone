@@ -1,5 +1,6 @@
 build:
 	@templ generate views/
+	@go mod tidy
 	@go build
 
 run:
