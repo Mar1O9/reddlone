@@ -1,0 +1,4 @@
+.env
+/views/*.go
+/views/ui/*.go
+/static
